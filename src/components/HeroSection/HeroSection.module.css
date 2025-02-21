@@ -1,0 +1,30 @@
+.container {
+    background-color: #0d081b;
+    height: 100vh;
+    display: flex;
+    padding: 100px 10px 10px 10px;
+    gap: 10;
+    scroll-behavior: smooth;
+}
+
+.container img {
+    border-radius: 50%;
+}
+
+.text h1 {
+    color: rgb(252, 252, 252);
+    font-size: 3rem;
+}
+
+.text p {
+    color: rgb(252, 252, 252);
+    font-size: 1.5rem;
+}
+
+.text button {
+    color: rgb(252, 252, 252);
+    background-color: coral;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px;
+}

@@ -1,0 +1,30 @@
+.container{
+    background-color: #0d081b;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px 1px 10px;
+    color: aliceblue;
+}
+
+
+.logo{
+    font-weight: 800;
+    
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+
+}
+
+.auth{
+    display: flex;
+    gap: 10;
+    font-size: larger;
+}
