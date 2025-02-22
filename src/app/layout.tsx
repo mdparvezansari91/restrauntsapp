@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 // Load the Geist and Geist Mono fonts
 const geistSans = Geist({
@@ -20,10 +19,37 @@ export const metadata: Metadata = {
   title: "best ever Restaurant",
   description: "This Website is made with Next.js",
   openGraph: {
-    title: "Lemon Chilli Restaurant",
-    description: "This Website is made with Next.js",
-    url: "https://restrauntsapp.vercel.app/",
-    images:"/burgerImage.jpg" 
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    url: 'https://nextjs.org',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://nextjs.org/og.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://nextjs.org/og-alt.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'My custom alt',
+      },
+    ],
+    videos: [
+      {
+        url: 'https://nextjs.org/video.mp4', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+    ],
+    audio: [
+      {
+        url: 'https://nextjs.org/audio.mp3', // Must be an absolute URL
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
 };
 
@@ -36,13 +62,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <meta property="og:title" content={metadata.openGraph?.title as string} />
-        <meta property="og:description" content={metadata.openGraph?.description as string} />
-        <meta property="og:url" content={metadata.openGraph?.url as string} />
-        <meta property="og:image" content="https://restrauntsapp.vercel.app/burgerImage.jpg" />
-        {/* Add other meta tags as needed */}
-      </Head>
+      
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children} {/* Render child components */}
       </body>
