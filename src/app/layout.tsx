@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 // Define metadata for the application
 export const metadata: Metadata = {
-  title: "Lemon Chilli Restaurant",
+  title: "best ever Restaurant",
   description: "This Website is made with Next.js",
   openGraph: {
     title: "Lemon Chilli Restaurant",
