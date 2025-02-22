@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Lemon Chilli Restaurant",
     description: "This Website is made with Next.js",
     url: "https://restrauntsapp.vercel.app/",
-    images:"'/burgerImage.jpg" 
+    images:"/burgerImage.jpg" 
   },
 };
 
